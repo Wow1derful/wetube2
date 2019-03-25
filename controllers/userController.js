@@ -10,7 +10,7 @@ export const postJoin = (req, res) => {
     } = req;
     if (password !== password2) {
         res.status(400);
-        res.render("Join", { pageTitle: "Join"});
+        res.render("join", { pageTitle: "Join"});
     } else {
         //To Do : Register User
         //To Do : Log user in``
@@ -20,10 +20,15 @@ export const postJoin = (req, res) => {
 
 export const getLogin = (req, res) => 
     res.render("login", { pageTitle: "Log In"});
-export const postlogin = (req, res) => 
-    res.render("login", { pageTitle: "Log In"});
-export const logout = (req, res) => 
-    res.render("logout", { pageTitle: "Log Out"});
+export const postLogin = (req, res) => {
+    res.redirect(routes.home);
+};
+
+export const logout = (req, res) => {
+    // To Do: Process Log Out
+    res.redirect(routes.home);
+};
+
 export const userDetail = (req, res) => 
     res.render("userDetail", { pageTitle: "User Detail"});
 export const editProfile = (req, res) => 
