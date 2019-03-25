@@ -19,7 +19,7 @@ export const videos = [
       views: 24,
       videoFile: 
        "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
-        creator: {
+      creator: {
         id: 121212,
         name: "Nicolas",
         email: "nico@las.com"
@@ -32,7 +32,7 @@ export const videos = [
       views: 24,
       videoFile: 
        "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
-        creator: {
+      creator: {
         id: 121212,
         name: "Nicolas",
         email: "nico@las.com"
@@ -45,7 +45,7 @@ export const videos = [
       views: 24,
       videoFile: 
        "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
-        creator: {
+      creator: {
         id: 121212,
         name: "Nicolas",
         email: "nico@las.com"
