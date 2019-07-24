@@ -2,6 +2,7 @@ import "./db";
 import app from "./app";
 import dotdenv from "dotenv";
 dotdenv.config();
+import "./models/Video";
 
 const PORT = process.env.PORT || 4000;
 
