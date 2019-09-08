@@ -23,13 +23,13 @@
     "postcss-loader": "^3.0.0",
     "pug": "^2.0.4",
     "sass-loader": "^8.0.0",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7"
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
   },
   "scripts": {
     "dev:server": "nodemon --exec babel-node init.js --delay 2",
     "dev:assets": "cross-env WEBPACK_ENV=development webpack -w",
-    "bulid:assets": "WEBPACK_ENV=production webpack"
+    "build:assets": "WEBPACK_ENV=production webpack"
   },
   "devDependencies": {
     "cross-env": "^5.2.1",

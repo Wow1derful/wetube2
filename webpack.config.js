@@ -12,14 +12,22 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.(scss)$/,
-        use: ExtractCSS([
+        test: /\.(js)$/,
+        use: [
           {
             loader: "babel-loader"
+          }
+        ]
+      },
+      {
+        test: /\.(scss)$/,
+        use: ExtractCSS.extract([
+          {
+            loader: "css-loader"
           },
           {
             loader: "postcss-loader",
-            option: {
+            options: {
               plugins() {
                 return [autoprefixer({ browsers: "cover 99.5%" })];
               }
