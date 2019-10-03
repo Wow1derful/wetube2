@@ -19,7 +19,7 @@ videoRouter.post(routes.upload, onlyPrivate, uploadVideo, postUpload);
 // Video Detail
 videoRouter.get(routes.videoDetail(), videoDetail);
 
-//Edit Video
+// Edit Video
 videoRouter.get(routes.editVideo(), onlyPrivate, getEditVideo);
 videoRouter.post(routes.editVideo(), onlyPrivate, postEditVideo);
 

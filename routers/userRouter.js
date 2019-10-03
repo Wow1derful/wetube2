@@ -4,7 +4,7 @@ import {
   userDetail,
   editProfile,
   changePassword
-} from "..//controllers/userController";
+} from "../controllers/userController";
 import { onlyPrivate } from "../middlewares";
 
 const userRouter = express.Router();
